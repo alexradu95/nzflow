@@ -11,16 +11,16 @@
 
   import '@xyflow/svelte/dist/style.css';
 
-  import { nodes, edges } from './nodes-and-edges';
-  import CustomNode from './CustomNode.svelte';
-  import AnnotationNode from './AnnotationNode.svelte';
-  import ButtonEdge from './ButtonEdge.svelte';
-  import CircleNode from './CircleNode.svelte';
-  import ResizableNode from './ResizableNode.svelte';
-  import ToolbarNode from './ToolbarNode.svelte';
-  import TextNode from './TextNode.svelte';
+  import { nodes, edges } from './store/nodes-and-edges';
+  import CustomNode from './nodes/example_nodes/CustomNode.svelte';
+  import AnnotationNode from './nodes/example_nodes/AnnotationNode.svelte';
+  import ButtonEdge from './nodes/example_nodes/ButtonEdge.svelte';
+  import CircleNode from './nodes/example_nodes/CircleNode.svelte';
+  import ResizableNode from './nodes/example_nodes/ResizableNode.svelte';
+  import ToolbarNode from './nodes/example_nodes/ToolbarNode.svelte';
+  import TextNode from './nodes/example_nodes/TextNode.svelte';
 
-  import './overview.css';
+  import './styles/overview.css';
 
   const nodeTypes: NodeTypes = {
     custom: CustomNode,

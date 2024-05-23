@@ -1,7 +1,7 @@
 <script lang="ts">
   import { type NodeProps, Handle, Position } from '@xyflow/svelte';
 
-  import type { CircleNode } from './types';
+  import type { CircleNode } from '../node_types';
 
   type $$Props = NodeProps<CircleNode>;
 

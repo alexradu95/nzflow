@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 import { MarkerType, type Edge } from '@xyflow/svelte';
 
-import type { AppNode } from './types';
+import type { AppNode } from '../nodes/node_types';
 
 export const nodes = writable<AppNode[]>([
   {

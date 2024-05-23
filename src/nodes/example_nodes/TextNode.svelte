@@ -9,7 +9,7 @@
     type Dimensions
   } from '@xyflow/svelte';
 
-  import { nodes } from './nodes-and-edges';
+  import { nodes } from '../../store/nodes-and-edges';
 
   type $$Props = NodeProps<BuiltInNode>;
   $$restProps;

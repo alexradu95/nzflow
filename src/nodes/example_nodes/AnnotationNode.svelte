@@ -1,6 +1,6 @@
 <script lang="ts">
   import { type NodeProps } from '@xyflow/svelte';
-  import type { AnnotationNode } from './types';
+  import type { AnnotationNode } from '../node_types';
 
   type $$Props = NodeProps<AnnotationNode>;
   $$restProps;
