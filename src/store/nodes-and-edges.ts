@@ -5,62 +5,6 @@ import type { AppNode } from '../nodes/node_types';
 
 export const nodes = writable<AppNode[]>([
   {
-    id: 'annotation-1',
-    type: 'annotation',
-    draggable: false,
-    selectable: false,
-    data: {
-      level: 1,
-      label: 'Built-in node and edge types. Draggable, deletable and connectable!',
-      arrowStyle: `
-        right: 0;
-        bottom: 0;
-        transform: translate(-30px,10px) rotate(-80deg);
-      `
-    },
-    position: { x: -80, y: -30 }
-  },
-  {
-    id: '1-1',
-    type: 'input',
-    data: {
-      label: 'Input Node'
-    },
-    position: { x: 150, y: 0 }
-  },
-  {
-    id: '1-2',
-    type: 'default',
-    data: {
-      label: 'Default Node'
-    },
-    position: { x: 0, y: 100 }
-  },
-  {
-    id: '1-3',
-    type: 'output',
-    data: {
-      label: 'Output Node'
-    },
-    position: { x: 300, y: 100 }
-  },
-  {
-    id: 'annotation-2',
-    type: 'annotation',
-    draggable: false,
-    selectable: false,
-    data: {
-      level: 2,
-      label: 'Sub flows, toolbars and resizable nodes!',
-      arrowStyle: `
-        left: 0;
-        bottom: 0;
-        transform: translate(5px, 25px) scale(1, -1) rotate(100deg);
-      `
-    },
-    position: { x: 220, y: 200 }
-  },
-  {
     id: '2-1',
     type: 'group',
     position: {
@@ -104,22 +48,6 @@ export const nodes = writable<AppNode[]>([
     `,
     parentId: '2-1',
     extent: 'parent'
-  },
-  {
-    id: 'annotation-3',
-    type: 'annotation',
-    draggable: false,
-    selectable: false,
-    data: {
-      level: 3,
-      label: 'Nodes and edges can be anything and are fully customizable!',
-      arrowStyle: `
-        right: 0;
-        bottom: 0;
-        transform: translate(-35px, 20px) rotate(-80deg);
-      `
-    },
-    position: { x: -40, y: 570 }
   },
   {
     id: '3-2',
